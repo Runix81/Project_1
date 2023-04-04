@@ -48,3 +48,8 @@ string[] FromOneArrayToAnother(string[] array)
     }
     return resArray;
 }
+
+string[] arr = AddArray();
+PrintArray(arr);
+System.Console.WriteLine("");
+PrintArray(FromOneArrayToAnother(arr));
