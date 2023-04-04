@@ -34,3 +34,17 @@ void PrintArray(string[] array)
     }
 }
 
+string[] FromOneArrayToAnother(string[] array)
+{
+    string[] resArray = new string[array.Length];
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            resArray[count] = array[i];
+            count++;
+        }
+    }
+    return resArray;
+}
