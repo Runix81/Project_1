@@ -15,3 +15,13 @@
     return res;
 }
 
+string[] AddArray()
+{
+    Random rnd = new Random();
+    string[] array = new string[rnd.Next(1, 10)];
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = DoString();
+    }
+    return array;
+}
